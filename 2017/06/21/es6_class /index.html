@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,React," />
+  <meta name="keywords" content="javascript,ES6," />
 
 
 
@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
-<meta name="keywords" content="javascript,React">
+<meta name="description" content="class基本上，ES6 的class可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。上面的代码用 ES6 的class改写，就是下面这样。 1234567891011//定义类class Point &amp;#123;  constructor(x, y) &amp;#123;    this.x = x;    thi">
+<meta name="keywords" content="javascript,ES6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React生命周期的一些总结">
-<meta property="og:url" content="http://yoursite.com/2017/07/21/React生命周期的一些总结/index.html">
+<meta property="og:title" content="ES6-class">
+<meta property="og:url" content="http://yoursite.com/2017/06/21/es6_class /index.html">
 <meta property="og:site_name" content="Code Station">
-<meta property="og:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta property="og:description" content="class基本上，ES6 的class可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。上面的代码用 ES6 的class改写，就是下面这样。 1234567891011//定义类class Point &amp;#123;  constructor(x, y) &amp;#123;    this.x = x;    thi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-21T06:45:02.000Z">
+<meta property="og:updated_time" content="2017-07-21T07:20:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React生命周期的一些总结">
-<meta name="twitter:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta name="twitter:title" content="ES6-class">
+<meta name="twitter:description" content="class基本上，ES6 的class可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。上面的代码用 ES6 的class改写，就是下面这样。 1234567891011//定义类class Point &amp;#123;  constructor(x, y) &amp;#123;    this.x = x;    thi">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/21/es6_class /"/>
 
 
 
 
 
-  <title>React生命周期的一些总结 | Code Station</title>
+  <title>ES6-class | Code Station</title>
   
 
 
@@ -287,7 +287,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/21/es6_class /">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="BubblyFace">
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">React生命周期的一些总结</h1>
+          <h1 class="post-title" itemprop="name headline">ES6-class</h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T11:00:40+08:00">
-                2017-07-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-21T11:00:40+08:00">
+                2017-06-21
               </time>
             
 
@@ -373,45 +373,18 @@
       
 
       
-        <h1 id="React生命周期的一些总结"><a href="#React生命周期的一些总结" class="headerlink" title="React生命周期的一些总结"></a>React生命周期的一些总结</h1><p>此文档结合<code>React.Component</code>的API食用。</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="Mounting"><a href="#Mounting" class="headerlink" title="Mounting"></a>Mounting</h3><blockquote>
-<p>These methods are called when an instance of a component is being created and inserted into the DOM:</p>
-<p>这些方法会在组件创建和插入DOM时触发</p>
-</blockquote>
-<ul>
-<li>constructor()</li>
-<li>componentWillMount()</li>
-<li>render()</li>
-<li>componentDidMount()</li>
-</ul>
-<h3 id="Updating"><a href="#Updating" class="headerlink" title="Updating"></a>Updating</h3><blockquote>
-<p>An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:</p>
-<p>这些方法在组件重新渲染的时候被触发</p>
-</blockquote>
-<ul>
-<li>componentWillReceiveProps()</li>
-<li>shouldComponentUpdate()</li>
-<li>componentWillUpdate()</li>
-<li>render()</li>
-<li>componentDidUpdate()</li>
-</ul>
-<h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><blockquote>
-<p>This method is called when a component is being removed from the DOM:</p>
-<p>这些方法会在组件从dom中移除时被触发</p>
-</blockquote>
-<ul>
-<li>componentWillUnmount()</li>
-</ul>
-<h2 id="阶段性介绍"><a href="#阶段性介绍" class="headerlink" title="阶段性介绍"></a>阶段性介绍</h2><h3 id="Before-Mount"><a href="#Before-Mount" class="headerlink" title="Before Mount"></a>Before Mount</h3><h4 id="render（）"><a href="#render（）" class="headerlink" title="render（）"></a>render（）</h4><p>执行前检测<code>this.props</code>和<code>this.state</code>并返回一个React元素。<code>render()</code>应该是<strong>纯净</strong>的。意思是它不应该去更改组件的状态，每次它被引用的时候都会返回相同的结果，它不直接的和浏览器交流。交流的工作交给<code>componentDidMount()</code></p>
-<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor()"></a>constructor()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">constructor(props) &#123;</div><div class="line">  super(props);</div><div class="line">  this.state = &#123;</div><div class="line">    color: props.initialColor</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>组件状态、方法绑定处理的正确地方</p>
-<h4 id="componentWillMount"><a href="#componentWillMount" class="headerlink" title="componentWillMount()"></a>componentWillMount()</h4><p>在组件加载前的钩子函数，组件内容尚且未加载</p>
-<h3 id="Mounted"><a href="#Mounted" class="headerlink" title="Mounted"></a>Mounted</h3><h4 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount()"></a>componentDidMount()</h4><p>此时DOM节点已经加载完毕，此处是一个用来发请求那数据的好地方，这里更新状态会触发重新渲染（<code>render</code>）。</p>
-<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><h4 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps()"></a>componentWillReceiveProps()</h4><p><code>componentWillReceiveProps(nextProps)</code><br>这个方法会在新的<code>props</code>或者<code>state</code>被接收到的时候被触发。需要注意的是就算没有新的props这个方法可能也会被触发。（父元素的重渲染导致）所以你要选择是否进行更新你的数据。</p>
-<h4 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate()"></a>shouldComponentUpdate()</h4><p><code>shouldComponentUpdate(nextProps, nextState)</code><br>本来但凡有state的变化都会发生重渲染，但是这个方法提供给你让你选择是否进行重渲染。首次渲染和<code>forceUpdate()</code>不会触发它。</p>
-<h4 id="componentWillUpdate"><a href="#componentWillUpdate" class="headerlink" title="componentWillUpdate()"></a>componentWillUpdate()</h4><p><code>componentWillUpdate(nextProps, nextState)</code><br>这个方法为更新的到临做准备</p>
-<h4 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate()"></a>componentDidUpdate()</h4><p><code>componentDidUpdate(prevProps, prevState)</code><br>更新完了之后的方法，这里也是个发请求的好地方。</p>
-<h3 id="Unmount"><a href="#Unmount" class="headerlink" title="Unmount"></a>Unmount</h3><h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount()"></a>componentWillUnmount()</h4><p><code>componentWillUnmount()</code><br>组件清除后利用这方法做清理</p>
+        <h1 id="class"><a href="#class" class="headerlink" title="class"></a>class</h1><p>基本上，ES6 的class可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。上面的代码用 ES6 的class改写，就是下面这样。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">//定义类</div><div class="line">class Point &#123;</div><div class="line">  constructor(x, y) &#123;</div><div class="line">    this.x = x;</div><div class="line">    this.y = y;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  toString() &#123;</div><div class="line">    return &apos;(&apos; + this.x + &apos;, &apos; + this.y + &apos;)&apos;;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>另外，类的内部所有定义的方法，都是不可枚举的（non-enumerable）。<br>类和模块的内部，默认就是严格模式，所以不需要使用use strict指定运行模式。只要你的代码写在类或模块之中，就只有严格模式可用。</p>
+<p>类不存在变量提升（hoist），这一点与 ES5 完全不同。</p>
+<h2 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h2><p>constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，如果没有显式定义，一个空的constructor方法会被默认添加。</p>
+<h2 id="Class-的取值函数（getter）和存值函数（setter）"><a href="#Class-的取值函数（getter）和存值函数（setter）" class="headerlink" title="Class 的取值函数（getter）和存值函数（setter）"></a>Class 的取值函数（getter）和存值函数（setter）</h2><p>与 ES5 一样，在“类”的内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">class CustomHTMLElement &#123;</div><div class="line">  constructor(element) &#123;</div><div class="line">    this.element = element;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  get html() &#123;</div><div class="line">    return this.element.innerHTML;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  set html(value) &#123;</div><div class="line">    this.element.innerHTML = value;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var descriptor = Object.getOwnPropertyDescriptor(</div><div class="line">  CustomHTMLElement.prototype, &quot;html&quot;</div><div class="line">);</div><div class="line"></div><div class="line">&quot;get&quot; in descriptor  // true</div><div class="line">&quot;set&quot; in descriptor  // true</div></pre></td></tr></table></figure>
+<h2 id="Class-的-Generator-方法"><a href="#Class-的-Generator-方法" class="headerlink" title="Class 的 Generator 方法"></a>Class 的 Generator 方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class Foo &#123;</div><div class="line">  constructor(...args) &#123;</div><div class="line">    this.args = args;</div><div class="line">  &#125;</div><div class="line">  * [Symbol.iterator]() &#123;</div><div class="line">    for (let arg of this.args) &#123;</div><div class="line">      yield arg;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">for (let x of new Foo(&apos;hello&apos;, &apos;world&apos;)) &#123;</div><div class="line">  console.log(x);</div><div class="line">&#125;</div><div class="line">// hello</div><div class="line">// world</div></pre></td></tr></table></figure>
+<h2 id="Class-的静态方法"><a href="#Class-的静态方法" class="headerlink" title="Class 的静态方法"></a>Class 的静态方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">class Foo &#123;</div><div class="line">  static classMethod() &#123;</div><div class="line">    return &apos;hello&apos;;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Foo.classMethod() // &apos;hello&apos;</div><div class="line"></div><div class="line">var foo = new Foo();</div><div class="line">foo.classMethod()</div><div class="line">// TypeError: foo.classMethod is not a function</div></pre></td></tr></table></figure>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>Class 可以通过extends关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">class ColorPoint extends Point &#123;</div><div class="line">  constructor(x, y, color) &#123;</div><div class="line">    super(x, y); // 调用父类的constructor(x, y)</div><div class="line">    this.color = color;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  toString() &#123;</div><div class="line">    return this.color + &apos; &apos; + super.toString(); // 调用父类的toString()</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="super关键字"><a href="#super关键字" class="headerlink" title="super关键字"></a>super关键字</h2><h1 id="Decorator"><a href="#Decorator" class="headerlink" title="Decorator"></a>Decorator</h1><p>修饰器（Decorator）是一个函数，用来修改类的行为。ES2017 引入了这项功能，目前 Babel 转码器已经支持</p>
 
       
     </div>
@@ -459,7 +432,7 @@
           
             <a href="/tags/javascript/" rel="tag"># javascript</a>
           
-            <a href="/tags/React/" rel="tag"># React</a>
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
           
         </div>
       
@@ -472,18 +445,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/21/ES6_Promise/" rel="next" title="ES6-Promise">
-                <i class="fa fa-chevron-left"></i> ES6-Promise
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/21/React对this的绑定/" rel="prev" title="React对this的绑定">
-                React对this的绑定 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/21/Generator/" rel="prev" title="ES6-Generator">
+                ES6-Generator <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -652,7 +621,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React生命周期的一些总结"><span class="nav-number">1.</span> <span class="nav-text">React生命周期的一些总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">1.1.</span> <span class="nav-text">API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounting"><span class="nav-number">1.1.1.</span> <span class="nav-text">Mounting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating"><span class="nav-number">1.1.2.</span> <span class="nav-text">Updating</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmounting"><span class="nav-number">1.1.3.</span> <span class="nav-text">Unmounting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阶段性介绍"><span class="nav-number">1.2.</span> <span class="nav-text">阶段性介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Before-Mount"><span class="nav-number">1.2.1.</span> <span class="nav-text">Before Mount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#render（）"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">render（）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">constructor()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillMount"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">componentWillMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounted"><span class="nav-number">1.2.2.</span> <span class="nav-text">Mounted</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidMount"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">componentDidMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update"><span class="nav-number">1.2.3.</span> <span class="nav-text">Update</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillReceiveProps"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">componentWillReceiveProps()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shouldComponentUpdate"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">shouldComponentUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUpdate"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">componentWillUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidUpdate"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">componentDidUpdate()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmount"><span class="nav-number">1.2.4.</span> <span class="nav-text">Unmount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUnmount"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">componentWillUnmount()</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#class"><span class="nav-number">1.</span> <span class="nav-text">class</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">1.1.</span> <span class="nav-text">constructor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Class-的取值函数（getter）和存值函数（setter）"><span class="nav-number">1.2.</span> <span class="nav-text">Class 的取值函数（getter）和存值函数（setter）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Class-的-Generator-方法"><span class="nav-number">1.3.</span> <span class="nav-text">Class 的 Generator 方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Class-的静态方法"><span class="nav-number">1.4.</span> <span class="nav-text">Class 的静态方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">2.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#super关键字"><span class="nav-number">2.1.</span> <span class="nav-text">super关键字</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Decorator"><span class="nav-number">3.</span> <span class="nav-text">Decorator</span></a></li></ol></div>
             
 
           </div>

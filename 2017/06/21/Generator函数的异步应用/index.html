@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,React," />
+  <meta name="keywords" content="javascript,ES6," />
 
 
 
@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
-<meta name="keywords" content="javascript,React">
+<meta name="description" content="Generator函数的异步应用 比Promise更好的异步实现  协程 coroutine12345function *asyncJob() &amp;#123;  // ...其他代码  var f = yield readFile(fileA);  // ...其他代码&amp;#125; 异步任务的封装1234567891011121314151617var fetch = require(&amp;apos;n">
+<meta name="keywords" content="javascript,ES6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React生命周期的一些总结">
-<meta property="og:url" content="http://yoursite.com/2017/07/21/React生命周期的一些总结/index.html">
+<meta property="og:title" content="Generator函数的异步应用">
+<meta property="og:url" content="http://yoursite.com/2017/06/21/Generator函数的异步应用/index.html">
 <meta property="og:site_name" content="Code Station">
-<meta property="og:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta property="og:description" content="Generator函数的异步应用 比Promise更好的异步实现  协程 coroutine12345function *asyncJob() &amp;#123;  // ...其他代码  var f = yield readFile(fileA);  // ...其他代码&amp;#125; 异步任务的封装1234567891011121314151617var fetch = require(&amp;apos;n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-21T06:45:02.000Z">
+<meta property="og:updated_time" content="2017-07-21T07:21:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React生命周期的一些总结">
-<meta name="twitter:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta name="twitter:title" content="Generator函数的异步应用">
+<meta name="twitter:description" content="Generator函数的异步应用 比Promise更好的异步实现  协程 coroutine12345function *asyncJob() &amp;#123;  // ...其他代码  var f = yield readFile(fileA);  // ...其他代码&amp;#125; 异步任务的封装1234567891011121314151617var fetch = require(&amp;apos;n">
 
 
 
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/21/Generator函数的异步应用/"/>
 
 
 
 
 
-  <title>React生命周期的一些总结 | Code Station</title>
+  <title>Generator函数的异步应用 | Code Station</title>
   
 
 
@@ -287,7 +287,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/21/Generator函数的异步应用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="BubblyFace">
@@ -304,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">React生命周期的一些总结</h1>
+          <h1 class="post-title" itemprop="name headline">Generator函数的异步应用</h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T11:00:40+08:00">
-                2017-07-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-21T11:00:40+08:00">
+                2017-06-21
               </time>
             
 
@@ -373,46 +373,20 @@
       
 
       
-        <h1 id="React生命周期的一些总结"><a href="#React生命周期的一些总结" class="headerlink" title="React生命周期的一些总结"></a>React生命周期的一些总结</h1><p>此文档结合<code>React.Component</code>的API食用。</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="Mounting"><a href="#Mounting" class="headerlink" title="Mounting"></a>Mounting</h3><blockquote>
-<p>These methods are called when an instance of a component is being created and inserted into the DOM:</p>
-<p>这些方法会在组件创建和插入DOM时触发</p>
+        <h1 id="Generator函数的异步应用"><a href="#Generator函数的异步应用" class="headerlink" title="Generator函数的异步应用"></a>Generator函数的异步应用</h1><blockquote>
+<p>比Promise更好的异步实现</p>
 </blockquote>
-<ul>
-<li>constructor()</li>
-<li>componentWillMount()</li>
-<li>render()</li>
-<li>componentDidMount()</li>
-</ul>
-<h3 id="Updating"><a href="#Updating" class="headerlink" title="Updating"></a>Updating</h3><blockquote>
-<p>An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:</p>
-<p>这些方法在组件重新渲染的时候被触发</p>
+<h2 id="协程-coroutine"><a href="#协程-coroutine" class="headerlink" title="协程 coroutine"></a>协程 coroutine</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function *asyncJob() &#123;</div><div class="line">  // ...其他代码</div><div class="line">  var f = yield readFile(fileA);</div><div class="line">  // ...其他代码</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="异步任务的封装"><a href="#异步任务的封装" class="headerlink" title="异步任务的封装"></a>异步任务的封装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var fetch = require(&apos;node-fetch&apos;);</div><div class="line"></div><div class="line">function* gen()&#123;</div><div class="line">  var url = &apos;https://api.github.com/users/github&apos;;</div><div class="line">  var result = yield fetch(url);</div><div class="line">  console.log(result.bio);</div><div class="line">&#125;</div><div class="line"></div><div class="line">var g = gen();</div><div class="line">var result = g.next();</div><div class="line"></div><div class="line">result.value.then(function(data)&#123;</div><div class="line">  return data.json();</div><div class="line">&#125;).then(function(data)&#123;</div><div class="line">  //这里把数据传递给result</div><div class="line">  g.next(data);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Thunk"><a href="#Thunk" class="headerlink" title="Thunk"></a>Thunk</h2><blockquote>
+<p>Thunk是自动执行Generator的一种方法</p>
 </blockquote>
-<ul>
-<li>componentWillReceiveProps()</li>
-<li>shouldComponentUpdate()</li>
-<li>componentWillUpdate()</li>
-<li>render()</li>
-<li>componentDidUpdate()</li>
-</ul>
-<h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><blockquote>
-<p>This method is called when a component is being removed from the DOM:</p>
-<p>这些方法会在组件从dom中移除时被触发</p>
-</blockquote>
-<ul>
-<li>componentWillUnmount()</li>
-</ul>
-<h2 id="阶段性介绍"><a href="#阶段性介绍" class="headerlink" title="阶段性介绍"></a>阶段性介绍</h2><h3 id="Before-Mount"><a href="#Before-Mount" class="headerlink" title="Before Mount"></a>Before Mount</h3><h4 id="render（）"><a href="#render（）" class="headerlink" title="render（）"></a>render（）</h4><p>执行前检测<code>this.props</code>和<code>this.state</code>并返回一个React元素。<code>render()</code>应该是<strong>纯净</strong>的。意思是它不应该去更改组件的状态，每次它被引用的时候都会返回相同的结果，它不直接的和浏览器交流。交流的工作交给<code>componentDidMount()</code></p>
-<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor()"></a>constructor()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">constructor(props) &#123;</div><div class="line">  super(props);</div><div class="line">  this.state = &#123;</div><div class="line">    color: props.initialColor</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>组件状态、方法绑定处理的正确地方</p>
-<h4 id="componentWillMount"><a href="#componentWillMount" class="headerlink" title="componentWillMount()"></a>componentWillMount()</h4><p>在组件加载前的钩子函数，组件内容尚且未加载</p>
-<h3 id="Mounted"><a href="#Mounted" class="headerlink" title="Mounted"></a>Mounted</h3><h4 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount()"></a>componentDidMount()</h4><p>此时DOM节点已经加载完毕，此处是一个用来发请求那数据的好地方，这里更新状态会触发重新渲染（<code>render</code>）。</p>
-<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><h4 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps()"></a>componentWillReceiveProps()</h4><p><code>componentWillReceiveProps(nextProps)</code><br>这个方法会在新的<code>props</code>或者<code>state</code>被接收到的时候被触发。需要注意的是就算没有新的props这个方法可能也会被触发。（父元素的重渲染导致）所以你要选择是否进行更新你的数据。</p>
-<h4 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate()"></a>shouldComponentUpdate()</h4><p><code>shouldComponentUpdate(nextProps, nextState)</code><br>本来但凡有state的变化都会发生重渲染，但是这个方法提供给你让你选择是否进行重渲染。首次渲染和<code>forceUpdate()</code>不会触发它。</p>
-<h4 id="componentWillUpdate"><a href="#componentWillUpdate" class="headerlink" title="componentWillUpdate()"></a>componentWillUpdate()</h4><p><code>componentWillUpdate(nextProps, nextState)</code><br>这个方法为更新的到临做准备</p>
-<h4 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate()"></a>componentDidUpdate()</h4><p><code>componentDidUpdate(prevProps, prevState)</code><br>更新完了之后的方法，这里也是个发请求的好地方。</p>
-<h3 id="Unmount"><a href="#Unmount" class="headerlink" title="Unmount"></a>Unmount</h3><h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount()"></a>componentWillUnmount()</h4><p><code>componentWillUnmount()</code><br>组件清除后利用这方法做清理</p>
-
+<p>javaSrcipt 语言中Thunk函数替换的不是表达式，而是多参数函数，将其替换成一个只接受回调函数作为参数的单参数表达式<br>编译器<strong>传名调用</strong>的实现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// 正常版本的readFile（多参数版本）</div><div class="line">fs.readFile(fileName, callback);</div><div class="line"></div><div class="line">// Thunk版本的readFile（单参数版本）</div><div class="line">var Thunk = function (fileName) &#123;</div><div class="line">  return function (callback) &#123;</div><div class="line">    return fs.readFile(fileName, callback);</div><div class="line">  &#125;;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">var readFileThunk = Thunk(fileName);</div><div class="line">readFileThunk(callback);</div></pre></td></tr></table></figure>
+<p>上面代码中，fs模块的readFile方法是一个多参数函数，两个参数分别为文件名和回调函数。经过转换器处理，它变成了一个单参数函数，只接受回调函数作为参数。这个单参数版本，就叫做 Thunk 函数。</p>
+<h3 id="Thunk-函数的自动流程管理"><a href="#Thunk-函数的自动流程管理" class="headerlink" title="Thunk 函数的自动流程管理"></a>Thunk 函数的自动流程管理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">function run(fn) &#123;</div><div class="line">  var gen = fn();</div><div class="line"></div><div class="line">  function next(err, data) &#123;</div><div class="line">    var result = gen.next(data);</div><div class="line">    if (result.done) return;</div><div class="line">    result.value(next);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  next();</div><div class="line">&#125;</div><div class="line"></div><div class="line">function* g() &#123;</div><div class="line">  // ...</div><div class="line">&#125;</div><div class="line"></div><div class="line">run(g);</div></pre></td></tr></table></figure>
+<p>有了这个执行器，执行 Generator 函数方便多了。不管内部有多少个异步操作，直接把 Generator 函数传入run函数即可。当然，前提是每一个异步操作，都要是 Thunk 函数，也就是说，跟在yield命令后面的必须是 Thunk 函数。<br>/Users/haoweisun/Desktop/work/BubblyFaceAwesome/uploads/es6_class .md</p>
+<h2 id="CO模块实现"><a href="#CO模块实现" class="headerlink" title="CO模块实现"></a>CO模块实现</h2>
       
     </div>
 
@@ -459,7 +433,7 @@
           
             <a href="/tags/javascript/" rel="tag"># javascript</a>
           
-            <a href="/tags/React/" rel="tag"># React</a>
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
           
         </div>
       
@@ -472,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/21/ES6_Promise/" rel="next" title="ES6-Promise">
-                <i class="fa fa-chevron-left"></i> ES6-Promise
+              <a href="/2017/06/21/Generator/" rel="next" title="ES6-Generator">
+                <i class="fa fa-chevron-left"></i> ES6-Generator
               </a>
             
           </div>
@@ -482,8 +456,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/21/React对this的绑定/" rel="prev" title="React对this的绑定">
-                React对this的绑定 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/21/ES6_Promise/" rel="prev" title="ES6-Promise">
+                ES6-Promise <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -652,7 +626,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React生命周期的一些总结"><span class="nav-number">1.</span> <span class="nav-text">React生命周期的一些总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">1.1.</span> <span class="nav-text">API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounting"><span class="nav-number">1.1.1.</span> <span class="nav-text">Mounting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating"><span class="nav-number">1.1.2.</span> <span class="nav-text">Updating</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmounting"><span class="nav-number">1.1.3.</span> <span class="nav-text">Unmounting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阶段性介绍"><span class="nav-number">1.2.</span> <span class="nav-text">阶段性介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Before-Mount"><span class="nav-number">1.2.1.</span> <span class="nav-text">Before Mount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#render（）"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">render（）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">constructor()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillMount"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">componentWillMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounted"><span class="nav-number">1.2.2.</span> <span class="nav-text">Mounted</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidMount"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">componentDidMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update"><span class="nav-number">1.2.3.</span> <span class="nav-text">Update</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillReceiveProps"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">componentWillReceiveProps()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shouldComponentUpdate"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">shouldComponentUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUpdate"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">componentWillUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidUpdate"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">componentDidUpdate()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmount"><span class="nav-number">1.2.4.</span> <span class="nav-text">Unmount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUnmount"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">componentWillUnmount()</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Generator函数的异步应用"><span class="nav-number">1.</span> <span class="nav-text">Generator函数的异步应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#协程-coroutine"><span class="nav-number">1.1.</span> <span class="nav-text">协程 coroutine</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#异步任务的封装"><span class="nav-number">1.2.</span> <span class="nav-text">异步任务的封装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Thunk"><span class="nav-number">1.3.</span> <span class="nav-text">Thunk</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Thunk-函数的自动流程管理"><span class="nav-number">1.3.1.</span> <span class="nav-text">Thunk 函数的自动流程管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CO模块实现"><span class="nav-number">1.4.</span> <span class="nav-text">CO模块实现</span></a></li></ol></li></ol></div>
             
 
           </div>
