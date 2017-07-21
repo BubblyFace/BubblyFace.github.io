@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="挣扎在前端坑里的小程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Code Station">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React生命周期的一些总结">
+<meta property="og:url" content="http://yoursite.com/2017/07/21/React生命周期的一些总结/index.html">
 <meta property="og:site_name" content="Code Station">
-<meta property="og:description" content="挣扎在前端坑里的小程序猿">
+<meta property="og:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-07-21T03:02:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Code Station">
-<meta name="twitter:description" content="挣扎在前端坑里的小程序猿">
+<meta name="twitter:title" content="React生命周期的一些总结">
+<meta name="twitter:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/"/>
 
 
 
 
 
-  <title>Code Station</title>
+  <title>React生命周期的一些总结 | Code Station</title>
   
 
 
@@ -171,9 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,273 +275,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/21/布局与BFC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="BubblyFace">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Code Station">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/21/布局与BFC/" itemprop="url">布局与BFC</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T11:00:40+08:00">
-                2017-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="布局与BFC"><a href="#布局与BFC" class="headerlink" title="布局与BFC"></a>布局与BFC</h1><h2 id="BFC"><a href="#BFC" class="headerlink" title="BFC"></a>BFC</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
-<p>BFC(Block formatting context)直译为”块级格式化上下文”。它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。</p>
-</blockquote>
-<h3 id="BFC布局规则"><a href="#BFC布局规则" class="headerlink" title="BFC布局规则"></a>BFC布局规则</h3><ol>
-<li>内部的Box会在垂直方向，一个接一个地放置。</li>
-<li>Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠</li>
-<li>每个元素的margin box的左边， 与包含块border box的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。</li>
-<li>BFC的区域不会与float box重叠。</li>
-<li>BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。</li>
-<li>计算BFC的高度时，浮动元素也参与计算</li>
-</ol>
-<h3 id="哪些元素会生成BFC"><a href="#哪些元素会生成BFC" class="headerlink" title="哪些元素会生成BFC?"></a>哪些元素会生成BFC?</h3><ol>
-<li>根元素</li>
-<li>float属性不为none</li>
-<li>position为absolute或fixed</li>
-<li>display为inline-block, table-cell, table-caption, flex, inline-flex</li>
-<li>overflow不为visible</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/21/React对this的绑定/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="BubblyFace">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Code Station">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/21/React对this的绑定/" itemprop="url">React对this的绑定</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T11:00:40+08:00">
-                2017-07-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="React对this的绑定"><a href="#React对this的绑定" class="headerlink" title="React对this的绑定"></a>React对this的绑定</h1><p>引用官方文档所说</p>
-<blockquote>
-<p>You have to be careful about the meaning of this in JSX callbacks. In JavaScript, class methods are not bound by default. If you forget to bind this.handleClick and pass it to onClick, this will be undefined when the function is actually called.</p>
-</blockquote>
-<p>在使用类方法进行回调的时候。方法的回调的this需要手动绑定，为解决这一问题总结数方法如下。</p>
-<h2 id="React-createClass-自动绑定"><a href="#React-createClass-自动绑定" class="headerlink" title="React.createClass 自动绑定"></a>React.createClass 自动绑定</h2><p>React 中创建组件的方式已经很多，比较古老的诸如 React.createClass 应该很多人并不陌生。当然，从 React 0.13 开始，可以使用 ES6 Class 代替 React.createClass 了，这应该是今后推荐的方法。<br>但是需要知道，React.createClass 创建的组件，可以自动绑定 this。也就是说，this 这个关键字会自动绑定在组件实例上面。</p>
-<h2 id="渲染时绑定"><a href="#渲染时绑定" class="headerlink" title="渲染时绑定"></a>渲染时绑定</h2><p><code>onChange = {this.handle.bind(this)}</code></p>
-<p>这种方法简明扼要，但是有一个潜在的性能问题：当组件每次重新渲染时，都会有一个新的函数创建。OMG! 这听上去貌似是一个很大的问题，但是其实在真正的开发场景中，由此引发的性能问题往往不值一提（除非是大型组件消费类应用或游戏）。</p>
-<h2 id="箭头函数绑定"><a href="#箭头函数绑定" class="headerlink" title="箭头函数绑定"></a>箭头函数绑定</h2><p>利用ES6的箭头函数隐式绑定this</p>
-<p><code>onChange = {e =&gt; this.handleChange(e)}</code></p>
-<p>副作用同上</p>
-<h3 id="两个规避消耗的方法"><a href="#两个规避消耗的方法" class="headerlink" title="两个规避消耗的方法"></a><strong>两个规避消耗的方法</strong></h3><h2 id="Constructor-内绑定（官网推荐）"><a href="#Constructor-内绑定（官网推荐）" class="headerlink" title="Constructor 内绑定（官网推荐）"></a>Constructor 内绑定（官网推荐）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">constructor(props) &#123;</div><div class="line">      super(props);</div><div class="line">      this.handleChange = this.handleChange.bind(this);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>这种方式往往被推荐为“最佳实践”，也是官网最推荐的方法。</p>
-<p>但是就个人习惯而言，我认为与前两种方法相比，constructor 内绑定在可读性和可维护性上也许有些欠缺。<br>同时，我们知道在 constructor 声明的方法不会存在实例的原型上，而属于实例本身的方法。每个实例都有同样一个 handleChange，这本身也是一种重复和浪费。</p>
-<h2 id="Class-属性中使用-和箭头函数"><a href="#Class-属性中使用-和箭头函数" class="headerlink" title="Class 属性中使用 = 和箭头函数"></a>Class 属性中使用 = 和箭头函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">handleChange = () =&gt; &#123;</div><div class="line">      // call this function from render </div><div class="line">      // and this.whatever in here works fine.</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>写这篇文档的目的就是寻找这个方法，因为在官网上学习使用第四种方法的时候，考虑到在大规模使用回调后如果每个方法都需要添加一个绑定语句，代码量会大增，且难以维护。</p>
-<p>这个方法有这些优点：</p>
-<ul>
-<li>使用箭头函数，有效绑定了 this；</li>
-<li>没有第二种方法和第三种方法的潜在性能问题；</li>
-<li>避免了方法四的组件实例重复问题；</li>
-<li>我们可以直接从 ES5 createClass 重构得来。</li>
-</ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>抛弃原来的<code>createClass</code> ，以及有性能损耗的23方法，又可以避免方法4里的大量创建的实例。花了我这么久找的方法五解决了我在看<strong>Material</strong>官方文档<code>bind``this</code>解决方法的疑惑.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -568,9 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/21/React生命周期的一些总结/" itemprop="url">React生命周期的一些总结</a></h1>
+          <h1 class="post-title" itemprop="name headline">React生命周期的一些总结</h1>
         
 
         <div class="post-meta">
@@ -617,9 +350,7 @@
       
 
       
-        
-          
-            <h1 id="React生命周期的一些总结"><a href="#React生命周期的一些总结" class="headerlink" title="React生命周期的一些总结"></a>React生命周期的一些总结</h1><p>此文档结合<code>React.Component</code>的API食用。</p>
+        <h1 id="React生命周期的一些总结"><a href="#React生命周期的一些总结" class="headerlink" title="React生命周期的一些总结"></a>React生命周期的一些总结</h1><p>此文档结合<code>React.Component</code>的API食用。</p>
 <h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="Mounting"><a href="#Mounting" class="headerlink" title="Mounting"></a>Mounting</h3><blockquote>
 <p>These methods are called when an instance of a component is being created and inserted into the DOM:</p>
 <p>这些方法会在组件创建和插入DOM时触发</p>
@@ -659,20 +390,43 @@
 <h4 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate()"></a>componentDidUpdate()</h4><p><code>componentDidUpdate(prevProps, prevState)</code><br>更新完了之后的方法，这里也是个发请求的好地方。</p>
 <h3 id="Unmount"><a href="#Unmount" class="headerlink" title="Unmount"></a>Unmount</h3><h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount()"></a>componentWillUnmount()</h4><p><code>componentWillUnmount()</code><br>组件清除后利用这方法做清理</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="BubblyFace WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
     </div>
+  </div>
 
-    <div>
+
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -680,21 +434,38 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/21/React对this的绑定/" rel="prev" title="React对this的绑定">
+                React对this的绑定 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -702,6 +473,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -722,8 +497,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -805,6 +589,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React生命周期的一些总结"><span class="nav-number">1.</span> <span class="nav-text">React生命周期的一些总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">1.1.</span> <span class="nav-text">API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounting"><span class="nav-number">1.1.1.</span> <span class="nav-text">Mounting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating"><span class="nav-number">1.1.2.</span> <span class="nav-text">Updating</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmounting"><span class="nav-number">1.1.3.</span> <span class="nav-text">Unmounting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阶段性介绍"><span class="nav-number">1.2.</span> <span class="nav-text">阶段性介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Before-Mount"><span class="nav-number">1.2.1.</span> <span class="nav-text">Before Mount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#render（）"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">render（）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">constructor()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillMount"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">componentWillMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounted"><span class="nav-number">1.2.2.</span> <span class="nav-text">Mounted</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidMount"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">componentDidMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update"><span class="nav-number">1.2.3.</span> <span class="nav-text">Update</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillReceiveProps"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">componentWillReceiveProps()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shouldComponentUpdate"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">shouldComponentUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUpdate"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">componentWillUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidUpdate"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">componentDidUpdate()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmount"><span class="nav-number">1.2.4.</span> <span class="nav-text">Unmount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUnmount"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">componentWillUnmount()</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -915,10 +715,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
