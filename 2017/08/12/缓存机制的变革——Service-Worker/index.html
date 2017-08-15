@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,React," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -94,18 +94,17 @@
 
 
 
-<meta name="description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
-<meta name="keywords" content="javascript,React">
+<meta name="description" content="背景上个文章介绍了过去常用的封装在请求／响应头里的缓存机制。随着H5的来临，老版本的缓存机制的缺陷略显突兀。Service Worker 作为r为PWA赋能离线可用性以及push消息的技术登上了舞台。 注册">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React生命周期的一些总结">
-<meta property="og:url" content="http://yoursite.com/2017/07/21/React生命周期的一些总结/index.html">
+<meta property="og:title" content="缓存机制的变革——Service Worker">
+<meta property="og:url" content="http://yoursite.com/2017/08/12/缓存机制的变革——Service-Worker/index.html">
 <meta property="og:site_name" content="BubblyFace的私人小站">
-<meta property="og:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta property="og:description" content="背景上个文章介绍了过去常用的封装在请求／响应头里的缓存机制。随着H5的来临，老版本的缓存机制的缺陷略显突兀。Service Worker 作为r为PWA赋能离线可用性以及push消息的技术登上了舞台。 注册">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-21T06:45:02.000Z">
+<meta property="og:updated_time" content="2017-08-12T01:39:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React生命周期的一些总结">
-<meta name="twitter:description" content="React生命周期的一些总结此文档结合React.Component的API食用。 APIMounting These methods are called when an instance of a component is being created and inserted into the DOM: 这些方法会在组件创建和插入DOM时触发   constructor() component">
+<meta name="twitter:title" content="缓存机制的变革——Service Worker">
+<meta name="twitter:description" content="背景上个文章介绍了过去常用的封装在请求／响应头里的缓存机制。随着H5的来临，老版本的缓存机制的缺陷略显突兀。Service Worker 作为r为PWA赋能离线可用性以及push消息的技术登上了舞台。 注册">
 
 
 
@@ -133,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/12/缓存机制的变革——Service-Worker/"/>
 
 
 
 
 
-  <title>React生命周期的一些总结 | BubblyFace的私人小站</title>
+  <title>缓存机制的变革——Service Worker | BubblyFace的私人小站</title>
   
 
 
@@ -291,7 +290,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/21/React生命周期的一些总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/12/缓存机制的变革——Service-Worker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="BubblyFace">
@@ -308,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">React生命周期的一些总结</h1>
+          <h1 class="post-title" itemprop="name headline">缓存机制的变革——Service Worker</h1>
         
 
         <div class="post-meta">
@@ -320,8 +319,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T11:00:40+08:00">
-                2017-07-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-12T09:29:56+08:00">
+                2017-08-12
               </time>
             
 
@@ -331,28 +330,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Font-End/" itemprop="url" rel="index">
-                    <span itemprop="name">Font-End</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -361,9 +338,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/07/21/React生命周期的一些总结/#comments" itemprop="discussionUrl">
+                <a href="/2017/08/12/缓存机制的变革——Service-Worker/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/07/21/React生命周期的一些总结/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/08/12/缓存机制的变革——Service-Worker/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -388,46 +365,8 @@
       
 
       
-        <h1 id="React生命周期的一些总结"><a href="#React生命周期的一些总结" class="headerlink" title="React生命周期的一些总结"></a>React生命周期的一些总结</h1><p>此文档结合<code>React.Component</code>的API食用。</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="Mounting"><a href="#Mounting" class="headerlink" title="Mounting"></a>Mounting</h3><blockquote>
-<p>These methods are called when an instance of a component is being created and inserted into the DOM:</p>
-<p>这些方法会在组件创建和插入DOM时触发</p>
-</blockquote>
-<ul>
-<li>constructor()</li>
-<li>componentWillMount()</li>
-<li>render()</li>
-<li>componentDidMount()</li>
-</ul>
-<h3 id="Updating"><a href="#Updating" class="headerlink" title="Updating"></a>Updating</h3><blockquote>
-<p>An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:</p>
-<p>这些方法在组件重新渲染的时候被触发</p>
-</blockquote>
-<ul>
-<li>componentWillReceiveProps()</li>
-<li>shouldComponentUpdate()</li>
-<li>componentWillUpdate()</li>
-<li>render()</li>
-<li>componentDidUpdate()</li>
-</ul>
-<h3 id="Unmounting"><a href="#Unmounting" class="headerlink" title="Unmounting"></a>Unmounting</h3><blockquote>
-<p>This method is called when a component is being removed from the DOM:</p>
-<p>这些方法会在组件从dom中移除时被触发</p>
-</blockquote>
-<ul>
-<li>componentWillUnmount()</li>
-</ul>
-<h2 id="阶段性介绍"><a href="#阶段性介绍" class="headerlink" title="阶段性介绍"></a>阶段性介绍</h2><h3 id="Before-Mount"><a href="#Before-Mount" class="headerlink" title="Before Mount"></a>Before Mount</h3><h4 id="render（）"><a href="#render（）" class="headerlink" title="render（）"></a>render（）</h4><p>执行前检测<code>this.props</code>和<code>this.state</code>并返回一个React元素。<code>render()</code>应该是<strong>纯净</strong>的。意思是它不应该去更改组件的状态，每次它被引用的时候都会返回相同的结果，它不直接的和浏览器交流。交流的工作交给<code>componentDidMount()</code></p>
-<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor()"></a>constructor()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">constructor(props) &#123;</div><div class="line">  super(props);</div><div class="line">  this.state = &#123;</div><div class="line">    color: props.initialColor</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>组件状态、方法绑定处理的正确地方</p>
-<h4 id="componentWillMount"><a href="#componentWillMount" class="headerlink" title="componentWillMount()"></a>componentWillMount()</h4><p>在组件加载前的钩子函数，组件内容尚且未加载</p>
-<h3 id="Mounted"><a href="#Mounted" class="headerlink" title="Mounted"></a>Mounted</h3><h4 id="componentDidMount"><a href="#componentDidMount" class="headerlink" title="componentDidMount()"></a>componentDidMount()</h4><p>此时DOM节点已经加载完毕，此处是一个用来发请求那数据的好地方，这里更新状态会触发重新渲染（<code>render</code>）。</p>
-<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><h4 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps()"></a>componentWillReceiveProps()</h4><p><code>componentWillReceiveProps(nextProps)</code><br>这个方法会在新的<code>props</code>或者<code>state</code>被接收到的时候被触发。需要注意的是就算没有新的props这个方法可能也会被触发。（父元素的重渲染导致）所以你要选择是否进行更新你的数据。</p>
-<h4 id="shouldComponentUpdate"><a href="#shouldComponentUpdate" class="headerlink" title="shouldComponentUpdate()"></a>shouldComponentUpdate()</h4><p><code>shouldComponentUpdate(nextProps, nextState)</code><br>本来但凡有state的变化都会发生重渲染，但是这个方法提供给你让你选择是否进行重渲染。首次渲染和<code>forceUpdate()</code>不会触发它。</p>
-<h4 id="componentWillUpdate"><a href="#componentWillUpdate" class="headerlink" title="componentWillUpdate()"></a>componentWillUpdate()</h4><p><code>componentWillUpdate(nextProps, nextState)</code><br>这个方法为更新的到临做准备</p>
-<h4 id="componentDidUpdate"><a href="#componentDidUpdate" class="headerlink" title="componentDidUpdate()"></a>componentDidUpdate()</h4><p><code>componentDidUpdate(prevProps, prevState)</code><br>更新完了之后的方法，这里也是个发请求的好地方。</p>
-<h3 id="Unmount"><a href="#Unmount" class="headerlink" title="Unmount"></a>Unmount</h3><h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount()"></a>componentWillUnmount()</h4><p><code>componentWillUnmount()</code><br>组件清除后利用这方法做清理</p>
-
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>上个文章介绍了过去常用的封装在请求／响应头里的缓存机制。随着H5的来临，老版本的缓存机制的缺陷略显突兀。Service Worker 作为r为PWA赋能离线可用性以及push消息的技术登上了舞台。</p>
+<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2>
       
     </div>
 
@@ -470,14 +409,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/javascript/" rel="tag"># javascript</a>
-          
-            <a href="/tags/React/" rel="tag"># React</a>
-          
-        </div>
-      
 
       
       
@@ -487,8 +418,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/21/es6_class /" rel="next" title="ES6-class">
-                <i class="fa fa-chevron-left"></i> ES6-class
+              <a href="/2017/08/12/http缓存机制学习总结/" rel="next" title="http缓存机制学习总结">
+                <i class="fa fa-chevron-left"></i> http缓存机制学习总结
               </a>
             
           </div>
@@ -496,10 +427,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/21/布局与BFC/" rel="prev" title="布局与BFC">
-                布局与BFC <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -683,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#React生命周期的一些总结"><span class="nav-number">1.</span> <span class="nav-text">React生命周期的一些总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#API"><span class="nav-number">1.1.</span> <span class="nav-text">API</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounting"><span class="nav-number">1.1.1.</span> <span class="nav-text">Mounting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Updating"><span class="nav-number">1.1.2.</span> <span class="nav-text">Updating</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmounting"><span class="nav-number">1.1.3.</span> <span class="nav-text">Unmounting</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阶段性介绍"><span class="nav-number">1.2.</span> <span class="nav-text">阶段性介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Before-Mount"><span class="nav-number">1.2.1.</span> <span class="nav-text">Before Mount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#render（）"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">render（）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">constructor()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillMount"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">componentWillMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mounted"><span class="nav-number">1.2.2.</span> <span class="nav-text">Mounted</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidMount"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">componentDidMount()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update"><span class="nav-number">1.2.3.</span> <span class="nav-text">Update</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillReceiveProps"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">componentWillReceiveProps()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#shouldComponentUpdate"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">shouldComponentUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUpdate"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">componentWillUpdate()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#componentDidUpdate"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">componentDidUpdate()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unmount"><span class="nav-number">1.2.4.</span> <span class="nav-text">Unmount</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#componentWillUnmount"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">componentWillUnmount()</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">2.</span> <span class="nav-text">注册</span></a></li></ol></div>
             
 
           </div>
@@ -813,9 +740,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/07/21/React生命周期的一些总结/';
-          this.page.identifier = '2017/07/21/React生命周期的一些总结/';
-          this.page.title = 'React生命周期的一些总结';
+          this.page.url = 'http://yoursite.com/2017/08/12/缓存机制的变革——Service-Worker/';
+          this.page.identifier = '2017/08/12/缓存机制的变革——Service-Worker/';
+          this.page.title = '缓存机制的变革——Service Worker';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://bubblyface.disqus.com/embed.js';
