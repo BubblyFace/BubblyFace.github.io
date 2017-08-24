@@ -94,16 +94,17 @@
 
 
 
-<meta name="description" content="挣扎在前端坑里的小程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="BubblyFace的私人小站">
-<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta name="description" content="热身撕订阅／发布正式撕Promise">
+<meta property="og:type" content="article">
+<meta property="og:title" content="手撕异步的全过程">
+<meta property="og:url" content="http://yoursite.com/2017/08/24/手撕异步的全过程/index.html">
 <meta property="og:site_name" content="BubblyFace的私人小站">
-<meta property="og:description" content="挣扎在前端坑里的小程序猿">
+<meta property="og:description" content="热身撕订阅／发布正式撕Promise">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-24T03:16:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BubblyFace的私人小站">
-<meta name="twitter:description" content="挣扎在前端坑里的小程序猿">
+<meta name="twitter:title" content="手撕异步的全过程">
+<meta name="twitter:description" content="热身撕订阅／发布正式撕Promise">
 
 
 
@@ -131,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/page/3/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/24/手撕异步的全过程/"/>
 
 
 
 
 
-  <title>BubblyFace的私人小站</title>
+  <title>手撕异步的全过程 | BubblyFace的私人小站</title>
   
 
 
@@ -174,12 +175,8 @@
 
   <div class="canvas">
     
-  <canvas id="canvas" style="position:fixed;width:100%;height:100%;z-index:-1"></canvas>
-
   </div>
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -282,82 +279,187 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <div class="avatar">
-      <img src="http://otmhgwtpm.bkt.clouddn.com/2B64998B-3D5E-4BB9-AFEC-365C646BEBC1.png">
+
+  <div id="posts" class="posts-expand">
+    
+
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/24/手撕异步的全过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BubblyFace">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BubblyFace的私人小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">手撕异步的全过程</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-24T10:00:56+08:00">
+                2017-08-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/24/手撕异步的全过程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/08/24/手撕异步的全过程/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="热身撕订阅／发布"><a href="#热身撕订阅／发布" class="headerlink" title="热身撕订阅／发布"></a>热身撕订阅／发布</h2><h2 id="正式撕Promise"><a href="#正式撕Promise" class="headerlink" title="正式撕Promise"></a>正式撕Promise</h2>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="BubblyFace WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
   </div>
-  <style>
-    .avatar {
-  height: 200px;
-  position: relative;
-  width: 200px;
-  margin: 0 auto;
 
-}
 
-.avatar img {
-  border-radius: 9999px;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
+      
+    </div>
 
-@keyframes cycle-colors {
-  0% { border-color: hsl(0, 100%, 50%); }
-  25% { border-color: hsl(90, 100%, 50%); }
-  50% { border-color: hsl(180, 100%, 50%); }
-  75% { border-color: hsl(270, 100%, 50%); }
-  100% { border-color: hsl(360, 100%, 50%); }
-}
+    <div>
+      
+        
 
-@keyframes pulse {
-  to {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
+      
+    </div>
 
-.avatar::before,
-.avatar::after {
-  animation: pulse 2s linear infinite;
-  border: #888 solid 8px;
-  border-radius: 9999px;
-  box-sizing: border-box;
-  content: ' ';
-  height: 140%;
-  left: -20%;
-  opacity: .6;
-  position: absolute;
-  top: -20%;
-  transform: scale(0.714);
-  width: 140%;
-  z-index: 1;
-}
+    <footer class="post-footer">
+      
 
-.avatar::after {
-  animation-delay: 1s;
-}
+      
+      
+      
 
-.avatar:hover img {
-  content: url('http://otmhgwtpm.bkt.clouddn.com/2B64998B-3D5E-4BB9-AFEC-365C646BEBC1.png');
-}
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/12/缓存机制的变革——Service-Worker/" rel="next" title="缓存机制的变革——Service Worker">
+                <i class="fa fa-chevron-left"></i> 缓存机制的变革——Service Worker
+              </a>
+            
+          </div>
 
-.avatar:hover::before,
-.avatar:hover::after {
-  animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
-}
+          <span class="post-nav-divider"></span>
 
-.avatar:hover::after {
-  animation-delay: .5s;
-}
-  </style>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
 
           </div>
           
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -378,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -489,6 +600,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#热身撕订阅／发布"><span class="nav-number">1.</span> <span class="nav-text">热身撕订阅／发布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正式撕Promise"><span class="nav-number">2.</span> <span class="nav-text">正式撕Promise</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -588,10 +715,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -609,6 +736,18 @@
       <script id="dsq-count-scr" src="https://bubblyface.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2017/08/24/手撕异步的全过程/';
+          this.page.identifier = '2017/08/24/手撕异步的全过程/';
+          this.page.title = '手撕异步的全过程';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bubblyface.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
@@ -649,9 +788,7 @@
 
   
 
+   
   
-  <script type="text/javascript" src="/js/canvas.js">
-</script>
-
 </body>
 </html>
