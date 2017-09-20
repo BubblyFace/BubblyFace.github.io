@@ -94,20 +94,20 @@
 
 
 
-<meta name="description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜Cache-control（主要）指明当前资源的有效期，控制浏览器">
+<meta name="description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜（强制缓存）Cache-control（主要）指明当前资源的有效期">
 <meta name="keywords" content="HTTP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="http缓存机制学习总结">
 <meta property="og:url" content="http://yoursite.com/2017/08/12/http缓存机制学习总结/index.html">
 <meta property="og:site_name" content="BubblyFace的私人小站">
-<meta property="og:description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜Cache-control（主要）指明当前资源的有效期，控制浏览器">
+<meta property="og:description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜（强制缓存）Cache-control（主要）指明当前资源的有效期">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://otmhgwtpm.bkt.clouddn.com/1494646535.png">
 <meta property="og:image" content="http://otmhgwtpm.bkt.clouddn.com/Last-Modified.pngIf-Modified-Since-and-Last-Modified.png">
-<meta property="og:updated_time" content="2017-08-15T13:09:11.000Z">
+<meta property="og:updated_time" content="2017-09-20T12:08:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http缓存机制学习总结">
-<meta name="twitter:description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜Cache-control（主要）指明当前资源的有效期，控制浏览器">
+<meta name="twitter:description" content="缓存原理浏览器所实现的缓存机制有很多种。此文只介绍有关HTTP协议头中的规则。《HTTP协议详解》中接受啊了一个缓存的GET请求的具体流程。大体经过了如下的几个步骤：  检查是否已缓存。 检查资源是否新鲜。 再次对资源进行验证如果未变更泽返回304状态码。否则返回新内容和200状态码。 客户端服务器更新本地的缓存  检查资源是否新鲜（强制缓存）Cache-control（主要）指明当前资源的有效期">
 <meta name="twitter:image" content="http://otmhgwtpm.bkt.clouddn.com/1494646535.png">
 
 
@@ -398,7 +398,7 @@
 <li>再次对资源进行验证如果未变更泽返回<code>304</code>状态码。否则返回新内容和<code>200</code>状态码。</li>
 <li>客户端服务器更新本地的缓存</li>
 </ol>
-<h2 id="检查资源是否新鲜"><a href="#检查资源是否新鲜" class="headerlink" title="检查资源是否新鲜"></a>检查资源是否新鲜</h2><h3 id="Cache-control（主要）"><a href="#Cache-control（主要）" class="headerlink" title="Cache-control（主要）"></a>Cache-control（主要）</h3><p>指明当前资源的有效期，控制浏览器是否直接从浏览器缓存取数据还是重新发请求到服务器取数据。这个协定取代了以前的 Expires 指令，在 HTTP/1.1 开始支持，且如果同时设置的话，优先级高于Expires。</p>
+<h2 id="检查资源是否新鲜（强制缓存）"><a href="#检查资源是否新鲜（强制缓存）" class="headerlink" title="检查资源是否新鲜（强制缓存）"></a>检查资源是否新鲜（强制缓存）</h2><h3 id="Cache-control（主要）"><a href="#Cache-control（主要）" class="headerlink" title="Cache-control（主要）"></a>Cache-control（主要）</h3><p>指明当前资源的有效期，控制浏览器是否直接从浏览器缓存取数据还是重新发请求到服务器取数据。这个协定取代了以前的 Expires 指令，在 HTTP/1.1 开始支持，且如果同时设置的话，优先级高于Expires。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Cache-control: must-revalidate</div><div class="line">Cache-control: no-cache</div><div class="line">Cache-control: no-store</div><div class="line">Cache-control: no-transform</div><div class="line">Cache-control: public</div><div class="line">Cache-control: private</div><div class="line">Cache-control: proxy-revalidate</div><div class="line">Cache-Control: max-age=&lt;seconds&gt;</div><div class="line">Cache-control: s-maxage=&lt;seconds&gt;</div></pre></td></tr></table></figure>
 <p>值可以是public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age<br>各个消息中的指令含义如下：</p>
 <ol>
@@ -416,7 +416,7 @@
 <h3 id="Expires（次要）"><a href="#Expires（次要）" class="headerlink" title="Expires（次要）"></a>Expires（次要）</h3><p>Expires是Web服务器响应消息头字段，在响应http请求时告诉浏览器在过期时间前浏览器可以直接从浏览器缓存取数据，而无需再次请求。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Expires:Tue, 15 Aug 2017 12:54:48 GMT</div></pre></td></tr></table></figure>
 <p>如这么一个响应头，在本机时间未达到规定时间时。都不会再次发送请求，本机人为修改时间是可以影响到Expires的行为判断的。</p>
-<h2 id="资源再检验"><a href="#资源再检验" class="headerlink" title="资源再检验"></a>资源再检验</h2><h3 id="If-Modified-Since／Last-Modified"><a href="#If-Modified-Since／Last-Modified" class="headerlink" title="If-Modified-Since／Last-Modified"></a>If-Modified-Since／Last-Modified</h3><p>在浏览器第一次请求某一个URL时，服务器端的返回状态会是 200 ，内容是你请求的资源，同时有一个Last-Modified的属性标记(HttpReponse Header)此文件在服务期端最后被修改的时间.</p>
+<h2 id="资源再检验（协商缓存）"><a href="#资源再检验（协商缓存）" class="headerlink" title="资源再检验（协商缓存）"></a>资源再检验（协商缓存）</h2><h3 id="If-Modified-Since／Last-Modified（）"><a href="#If-Modified-Since／Last-Modified（）" class="headerlink" title="If-Modified-Since／Last-Modified（）"></a>If-Modified-Since／Last-Modified（）</h3><p>在浏览器第一次请求某一个URL时，服务器端的返回状态会是 200 ，内容是你请求的资源，同时有一个Last-Modified的属性标记(HttpReponse Header)此文件在服务期端最后被修改的时间.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Last-Modified:Tue, 24 Feb 2009 08:01:04 GMT</div></pre></td></tr></table></figure>
 <p>web服务器收到请求后发现有头If-Modified-Since 则与被请求资源在客户端的最后修改时间 Last-Modified 进行比对。若最后修改时间较新，说明资源又被改动过，则响应整片资源内容（写在响应消息包体内），响应状态码为 HTTP 200；若最后修改时间 Last-Modified较旧，说明资源无新修改，则 响应HTTP 304 (这里只需要发送一个head头，包体内容为空，这样就节省了传输数据量)，告知浏览器继续使用所保存的cache.</p>
 <p><img src="http://otmhgwtpm.bkt.clouddn.com/Last-Modified.pngIf-Modified-Since-and-Last-Modified.png" alt=""></p>
@@ -592,7 +592,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -696,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存原理"><span class="nav-number">1.</span> <span class="nav-text">缓存原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查资源是否新鲜"><span class="nav-number">2.</span> <span class="nav-text">检查资源是否新鲜</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cache-control（主要）"><span class="nav-number">2.1.</span> <span class="nav-text">Cache-control（主要）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Expires（次要）"><span class="nav-number">2.2.</span> <span class="nav-text">Expires（次要）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源再检验"><span class="nav-number">3.</span> <span class="nav-text">资源再检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#If-Modified-Since／Last-Modified"><span class="nav-number">3.1.</span> <span class="nav-text">If-Modified-Since／Last-Modified</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#If-None-Match-Etag"><span class="nav-number">3.2.</span> <span class="nav-text">If-None-Match /Etag</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际使用"><span class="nav-number">4.</span> <span class="nav-text">实际使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术展望"><span class="nav-number">5.</span> <span class="nav-text">技术展望</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference："><span class="nav-number">5.1.</span> <span class="nav-text">Reference：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存原理"><span class="nav-number">1.</span> <span class="nav-text">缓存原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检查资源是否新鲜（强制缓存）"><span class="nav-number">2.</span> <span class="nav-text">检查资源是否新鲜（强制缓存）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cache-control（主要）"><span class="nav-number">2.1.</span> <span class="nav-text">Cache-control（主要）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Expires（次要）"><span class="nav-number">2.2.</span> <span class="nav-text">Expires（次要）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源再检验（协商缓存）"><span class="nav-number">3.</span> <span class="nav-text">资源再检验（协商缓存）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#If-Modified-Since／Last-Modified（）"><span class="nav-number">3.1.</span> <span class="nav-text">If-Modified-Since／Last-Modified（）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#If-None-Match-Etag"><span class="nav-number">3.2.</span> <span class="nav-text">If-None-Match /Etag</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际使用"><span class="nav-number">4.</span> <span class="nav-text">实际使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术展望"><span class="nav-number">5.</span> <span class="nav-text">技术展望</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference："><span class="nav-number">5.1.</span> <span class="nav-text">Reference：</span></a></li></ol></li></ol></div>
             
 
           </div>

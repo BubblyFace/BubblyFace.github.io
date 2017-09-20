@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="BubblyFace的私人小站">
 <meta property="og:description" content="一面 promise： promise all方法的实现和改造 react：组件间通讯（redux） 手写等腰三角、同心园 变量提升的考点 组件化开发 性能优化（dom层次）  总结：还有些小点记不清了，一面面的比较顺畅，除了promise All的改造答错了一点。 二面项目问的比较多，最后利用组件化思想实现一个dom的动画。做的及其不好，没考虑到dom绘制动画和canvas的不同直接进行绘制导致">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-04T08:19:05.000Z">
+<meta property="og:updated_time" content="2017-09-18T05:32:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试——拼多多">
 <meta name="twitter:description" content="一面 promise： promise all方法的实现和改造 react：组件间通讯（redux） 手写等腰三角、同心园 变量提升的考点 组件化开发 性能优化（dom层次）  总结：还有些小点记不清了，一面面的比较顺畅，除了promise All的改造答错了一点。 二面项目问的比较多，最后利用组件化思想实现一个dom的动画。做的及其不好，没考虑到dom绘制动画和canvas的不同直接进行绘制导致">
@@ -377,7 +377,7 @@
 <h2 id="二面"><a href="#二面" class="headerlink" title="二面"></a>二面</h2><p>项目问的比较多，最后利用组件化思想实现一个dom的动画。做的及其不好，没考虑到dom绘制动画和canvas的不同直接进行绘制导致代码的冗杂。题目大概如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">class 提醒()&#123;</div><div class="line">	//动画要求用户可以点击实现出现和隐藏，cb满足提醒动画完成状态，不允许使用框架</div><div class="line">	//使用原生js 的定时器来实现</div><div class="line">	show(cb)&#123;</div><div class="line">		//实现提醒框的上浮</div><div class="line">	&#125;</div><div class="line">	hide(cb)&#123;</div><div class="line">		//实现提醒框的下落</div><div class="line">	&#125;</div><div class="line">	updata()&#123;</div><div class="line">		//实现提醒框的状态更新</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>实现思路：大概是需要在updata里完成callback的队列存储机制，当状态进行改变时，清理队列并更新状态</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>跪的点基本上都是在异步的实现上，错误的在show和hide里扔了cb处理机制。没有考虑到需求。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>跪的点基本上都是在异步的实现上，错误的在show和hide里扔了cb处理机制。没有考虑到需求。<br></p>
 
       
     </div>
@@ -430,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/04/post/" rel="next" title="post">
-                <i class="fa fa-chevron-left"></i> post
+              <a href="/2017/08/24/手撕异步的全过程/" rel="next" title="手撕异步的全过程">
+                <i class="fa fa-chevron-left"></i> 手撕异步的全过程
               </a>
             
           </div>
@@ -440,8 +440,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/09/15/至九月中旬找工作小结/" rel="prev" title="至九月中旬找工作小结">
-                至九月中旬找工作小结 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/09/20/关于应用场景的思考/" rel="prev" title="关于应用场景的思考">
+                关于应用场景的思考 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -522,7 +522,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
