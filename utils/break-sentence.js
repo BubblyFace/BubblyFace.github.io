@@ -1,9 +1,9 @@
 /**
  * @desc 根据等级生成段落
  * @param { String } paragraph 
- * @param { Number } level // 1 split with '.'; 2 spilt with ','
+ * @param { Number } level // 1 split with '.'; 2 spilt with ',' and '.'
  */
-function breakSentence(paragraph, level) {
+exports.breakSentence = (paragraph, level) => {
 
   let sentenceArr = [];
 
@@ -20,5 +20,3 @@ function breakSentence(paragraph, level) {
   }
   return sentenceArr
 }
-
-module.exports = breakSentence
