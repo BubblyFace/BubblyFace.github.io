@@ -1,8 +1,6 @@
  const path = require('path');
  const HtmlWebpackPlugin = require('html-webpack-plugin');
- const {
-   CleanWebpackPlugin
- } = require('clean-webpack-plugin');
+
 
  module.exports = {
    entry: path.join(__dirname, '../src/index.js'),
@@ -12,16 +10,9 @@
    },
    module: {
      rules: [{
-         test: /\.m?js$/,
-         exclude: /(node_modules|bower_components)/,
-         use: {
-           loader: 'babel-loader',
-           options: {
-             presets: ['@babel/preset-env'],
-             plugins: ['@babel/plugin-proposal-object-rest-spread']
-           }
-         }
-       },
+      test: /\.(js|jsx)$/,
+      loader: 'babel-loader',
+    },
        {
          test: /\.css$/,
          use: ['style-loader', 'css-loader']
