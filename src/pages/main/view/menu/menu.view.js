@@ -1,9 +1,15 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+
 import "./assets/menu.style.css"
 
-export class MenuView extends Component {
-  render() {
-    return <div id="menu" className="negative">
-    </div>
-  }
+export function MenuView() {
+  const [isMenuActive, setMenuActive] = useState(false);
+  const menuClass = isMenuActive ? 'active' : 'negative';
+  return <div id="menu" className={menuClass} onClick={() => { setMenuActive(!isMenuActive) }}>
+    {
+      isMenuActive && <div>
+
+      </div>
+    }
+  </div>
 }
