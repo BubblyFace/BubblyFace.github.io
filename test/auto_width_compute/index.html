@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="auto-width-check-box" style="background-color:rgb(134, 166, 151)">
+    <div class="box-with-percent-width-value" style="background-color:rgb(37, 83, 89)"></div>
+    <div class="box-with-text" style="background-color:rgb(180, 129, 187)">here is A textConte</div>
+    <div class="box-with-percent-width-value" style="background-color:rgb(38, 30, 71);position: absolute;"></div>
+  </div>
+  <style>
+    #auto-width-check-box {
+      width: auto;
+      position: relative;
+    }
+
+    #auto-width-check-box>.box-with-percent-width-value {
+      height: 50px;
+      width: 50%;
+    }
+  </style>
+</body>
+
+</html>
