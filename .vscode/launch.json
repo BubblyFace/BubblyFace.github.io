@@ -10,6 +10,13 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/public/model/hsl.js",
       "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "markdown",
+      "program": "${workspaceFolder}/test/markdown-test.js",
+      "console": "integratedTerminal"
     }
   ]
 }

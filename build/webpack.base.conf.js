@@ -14,6 +14,12 @@
          loader: 'babel-loader',
        },
        {
+        test: /\.(md)$/,
+        use: [{
+          loader: 'raw-loader'
+        }]
+      },
+       {
          test: /\.css$/,
          use: ['style-loader', 'css-loader']
        },
