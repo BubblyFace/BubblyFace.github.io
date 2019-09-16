@@ -1,5 +1,4 @@
 let textArray = '%D0%C2%CC%EC%B5%D8%B8%BD%BD%FC%B5%C4'.split('%');
-let textArray = '%D0%C2%CC%EC%B5%D8%B8%BD%BD%FC%B5%C4'.split('%');
 let ba = [];
 let buffer = [];
 ​
