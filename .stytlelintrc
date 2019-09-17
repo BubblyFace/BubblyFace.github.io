@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard",//需安装此包，继承一些规范，不用自己一个一个定义了
+  "rules": {
+    "block-no-empty": null,
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [ "always", {
+      "ignore": ["stylelint-commands", "after-comment"]
+    } ],
+    "declaration-colon-space-after": "always",
+    "max-empty-lines": 2,
+    "rule-empty-line-before": [ "always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    } ],
+    "color-hex-case": "lower",
+    "unit-whitelist": ["px", "em", "rem", "%", "s"]
+  }
+}

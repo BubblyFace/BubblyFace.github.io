@@ -1,8 +1,8 @@
 let textArray = '%D0%C2%CC%EC%B5%D8%B8%BD%BD%FC%B5%C4'.split('%');
 let ba = [];
 let buffer = [];
-​
 let decoder = new TextDecoder('chinese');
+
 for (let i = 1; i <= textArray.length; i ++) {
   buffer.push(parseInt(textArray[i], 16));
   if(buffer.length === 2) {
@@ -12,5 +12,6 @@ for (let i = 1; i <= textArray.length; i ++) {
     buffer = [];
   }
 }
+
 let out = ba.map(item => decoder.decode(item));
 console.log(out)

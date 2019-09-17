@@ -11,11 +11,11 @@ function Users() {
 }
 
 ReactDOM.render(
-    <Router>
-      <div>
-        <Route path="/" exact component={MainView} />
-        <Route path="/users" component={Users} />
-      </div>
-    </Router>,
-    document.getElementById('root')
+  <Router>
+    <div>
+      <Route path="/" exact component={MainView} />
+      <Route path="/users" component={Users} />
+    </div>
+  </Router>,
+  document.getElementById('root')
 );

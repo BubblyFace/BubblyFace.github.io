@@ -13,7 +13,7 @@ getMarkDown('../public/markdown/webGL/1.md').then(result => {
 async function getMarkDown (filePath){
   let mdFileRaw =  await fse.readFile(path.join(__dirname, filePath));
   let mdFileString = mdFileRaw.toString();
-  let mdContent;
+  let mdContent = '';
   try {
     mdContent = md.render(mdFileString);
   } catch (error) {
