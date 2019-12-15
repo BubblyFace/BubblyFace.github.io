@@ -26,6 +26,12 @@ module.exports = {
       }]
     },
     {
+      test: /\.(mdo)$/,
+      use: [{
+        loader: 'raw-loader'
+      }]
+    },
+    {
       test: /\.css$/,
       use: ['style-loader', 'css-loader']
     },
