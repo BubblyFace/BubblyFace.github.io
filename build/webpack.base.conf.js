@@ -8,6 +8,13 @@ module.exports = {
     filename: 'bundle.[hash].js',
     path: path.join(__dirname, '../dist')
   },
+  resolve: {
+    alias: {
+      '@src': path.resolve(__dirname, 'src'),
+      '@components': path.resolve(__dirname, 'lib/components'),
+      '@lib': path.resolve(__dirname, 'lib')
+    }
+  },
   module: {
     rules: [{
       test: /\.js[x]?$/,
