@@ -1,6 +1,6 @@
 # About
 
-## 👨‍💻 My Profile:
+## 👨‍💻 My Motto:
 
 **知行合一** (walk the talk)
 
