@@ -2,6 +2,9 @@
 hero:
   title: Bubblyface Blog
   desc: 一个小站关于一名想可持续发展的前端研发工程师
+  action:
+    - text: About
+      link: /about
 footer: © Copyright 2020 ~ 2020 by shwBubbly
 ---
 

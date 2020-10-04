@@ -1,3 +1,9 @@
+---
+nav:
+  title: About
+  path: /about
+---
+
 # About
 
 ## 👨‍💻 My Motto:
