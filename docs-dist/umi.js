@@ -1501,6 +1501,75 @@
           })()
         : void 0);
   },
+  '1+WN': function(e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('q1tI'),
+      o = n.n(r);
+    n('B2uJ'), n('+su7'), n('qOys'), n('5Yjd');
+    t['default'] = function() {
+      return o.a.createElement(
+        o.a.Fragment,
+        null,
+        o.a.createElement(
+          'div',
+          { className: 'markdown' },
+          o.a.createElement(
+            'h1',
+            { id: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b' },
+            o.a.createElement(
+              'a',
+              {
+                'aria-hidden': 'true',
+                href: '#\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+          ),
+          o.a.createElement(
+            'h2',
+            { id: '\u8bc4\u5206' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#\u8bc4\u5206' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u8bc4\u5206',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u603b\u5206 ',
+            o.a.createElement('code', null, '4'),
+            '\u5267\u60c5 ',
+            o.a.createElement('code', null, '3.5'),
+            '\u89c2\u611f ',
+            o.a.createElement('code', null, '4.5'),
+            '\u753b\u9762 ',
+            o.a.createElement('code', null, '4'),
+          ),
+          o.a.createElement(
+            'h2',
+            { id: '\u7efc\u8ff0' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#\u7efc\u8ff0' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u7efc\u8ff0',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u8fd9\u662f\u90e8\u4e3b\u65cb\u5f8b\u7684\u7535\u5f71\uff0c\u7535\u5f71\u4e00\u5171\u53c8\u4e94\u4e2a\u90e8\u5206\u6784\u6210\uff0c\u6bcf\u4e2a\u6545\u4e8b\u6709\u4e0d\u540c\u7684\u5bfc\u6f14\u8fdb\u884c\u62cd\u6444\u3002\u4e0d\u5f97\u4e0d\u8bf4\u6bcf\u4f4d\u5bfc\u6f14\u90fd\u5728\u4e09\u5341\u591a\u5206\u949f\u7684\u65f6\u95f4\u91cc\u7ed9\u89c2\u4f17\u63d0\u4f9b\u4e00\u4e2a\u5b8c\u6574\u7684\u6545\u4e8b\uff0c\u51e0\u4e4e\u6ca1\u6709\u95f4\u9694\u7684\u7b11\u58f0\u8bc1\u660e\u7740\u8fd9\u662f\u4e00\u90e8\u4f18\u79c0\u7684\u559c\u5267\u7535\u5f71\u3002\u5927\u9053\u7406\u90fd\u4f1a\u4f34\u968f\u7740\u5b09\u76ae\u7684\u8c03\u4f83\uff0c\u4e0d\u4f1a\u8ba9\u4eba\u611f\u5230\u751f\u786c\u7684\u5c34\u5c2c\u611f\u3002\u8fd9\u662f\u6211\u89c9\u5f97\u770b\u5230\u7684\u7b2c\u4e00\u90e8\u80fd\u628a\u4e3b\u65cb\u5f8b\u7535\u5f71\u62cd\u7684\u5982\u6b64\u8d34\u8fd1\u5927\u4f17\u7684\uff0c\u63a8\u8350\u4e00\u770b\u3002\uff08\u9274\u4e8e\u9648\u601d\u6210\u628a\u4e2b\u4e2b\u90fd\u6446\u51fa\u6765\u4e86\uff0c\u6211\u8ba4\u4e3a\u8fd8\u662f\u76f8\u5f53\u6709\u8bda\u610f\u7684\uff09',
+            o.a.createElement('strong', null, 'PS\uff1a '),
+            ' \u5f20\u827a\u8c0b\u3001\u5f90\u5ce5\u3001\u9648\u601d\u6210\u3001\u6c88\u817e\u3001\u51ef\u6b4c\uff0c\u4e2d\u56fd\u7535\u5f71\u62c9\u8fc7\u6765\u4e00\u534a\u6765\u6f14\u4e86\u3002\u3002\u3002',
+          ),
+        ),
+      );
+    };
+  },
   '14Sl': function(e, t, n) {
     'use strict';
     n('rB9j');
@@ -32531,6 +32600,12 @@
                             title: '\u59dc\u5b50\u7259',
                             meta: {},
                           },
+                          {
+                            path:
+                              '/read or see/\u300a\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b\u300b',
+                            title: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+                            meta: {},
+                          },
                         ],
                         '/tech': [
                           {
@@ -32703,6 +32778,29 @@
                 nav: { path: '/read or see', title: 'Read or see' },
               },
               title: '\u59dc\u5b50\u7259',
+            },
+            {
+              path:
+                '/read or see/\u300a\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b\u300b',
+              component: n('1+WN').default,
+              exact: !0,
+              meta: {
+                filePath:
+                  'docs/read or see/\u300a\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b\u300b.md',
+                updatedTime: 1601864282068,
+                slugs: [
+                  {
+                    depth: 1,
+                    value: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+                    heading: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+                  },
+                  { depth: 2, value: '\u8bc4\u5206', heading: '\u8bc4\u5206' },
+                  { depth: 2, value: '\u7efc\u8ff0', heading: '\u7efc\u8ff0' },
+                ],
+                title: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
+                nav: { path: '/read or see', title: 'Read or see' },
+              },
+              title: '\u6211\u548c\u6211\u4eec\u7684\u751f\u6d3b',
             },
             {
               path: '/tech/template-method-or-strategy',
