@@ -5050,6 +5050,16 @@
           { className: 'markdown' },
           o.a.createElement(
             'h1',
+            { id: '2020-10-09' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#2020-10-09' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '2020-10-09',
+          ),
+          o.a.createElement(
+            'h2',
             { id: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8' },
             o.a.createElement(
               'a',
@@ -5074,7 +5084,7 @@
                 o.a.createElement(
                   'li',
                   null,
-                  '\u589e\u52a0\u4fdd\u8bc112:00 - 7:20\u7684\u7761\u7720\uff0c\u5e76\u8c03\u7814\u5982\u4f55\u66f4\u597d\u7684\u8fdb\u884c\u6df1\u5ea6\u7761\u7720',
+                  '\u589e\u52a0\u4fdd\u8bc1 12:00 - 7:20 \u7684\u7761\u7720\uff0c\u5e76\u8c03\u7814\u5982\u4f55\u66f4\u597d\u7684\u8fdb\u884c\u6df1\u5ea6\u7761\u7720',
                 ),
               ),
             ),
@@ -5100,7 +5110,7 @@
             o.a.createElement(
               'li',
               null,
-              '\u665a\u4e0a\u81ea\u5df1\u7684\u9879\u76ee\u56e0\u4e3a\u53bb\u770b\u6bd4\u8d5b\u4e86\u6ca1\u6709\u8fdb\u884c\u63a8\u8fdb\uff0clack\u8fdb\u5ea6\u6709\u5409\u4ed6\u548c\u6512\u94b1\u8f6f\u4ef6\u7684\u5f00\u53d1',
+              '\u665a\u4e0a\u81ea\u5df1\u7684\u9879\u76ee\u56e0\u4e3a\u53bb\u770b\u6bd4\u8d5b\u4e86\u6ca1\u6709\u8fdb\u884c\u63a8\u8fdb\uff0clack \u8fdb\u5ea6\u6709\u5409\u4ed6\u548c\u6512\u94b1\u8f6f\u4ef6\u7684\u5f00\u53d1',
               o.a.createElement(
                 'ul',
                 null,
@@ -7166,6 +7176,128 @@
       };
     }
     e.exports = c;
+  },
+  '8CUK': function(e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('q1tI'),
+      o = n.n(r);
+    n('B2uJ'), n('+su7'), n('qOys'), n('5Yjd');
+    t['default'] = function() {
+      return o.a.createElement(
+        o.a.Fragment,
+        null,
+        o.a.createElement(
+          'div',
+          { className: 'markdown' },
+          o.a.createElement(
+            'h1',
+            { id: '2020-10-12' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#2020-10-12' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '2020-10-12',
+          ),
+          o.a.createElement(
+            'h2',
+            { id: '\u7b2c\u4e8c\u5468\u5de5\u4f5c\u5f00\u59cb\u590d\u76d8' },
+            o.a.createElement(
+              'a',
+              {
+                'aria-hidden': 'true',
+                href: '#\u7b2c\u4e8c\u5468\u5de5\u4f5c\u5f00\u59cb\u590d\u76d8',
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u7b2c\u4e8c\u5468\u5de5\u4f5c\u5f00\u59cb\u590d\u76d8',
+          ),
+          o.a.createElement(
+            'h3',
+            { id: '1' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#1' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '1',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u5bf9\u65f6\u95f4\u5b89\u6392\u5e94\u8be5\u662f\u6ca1\u6709\u6309\u7167\u81ea\u5df1\u9884\u60f3\u7684\u5b89\u6392\u8d70\uff0c\u4e0d\u8fc7\u5de5\u4f5c\u7684\u8fdb\u5ea6\u8fd8\u65f6ok\u80fd\u8ddf\u4e0a\uff0c\u5bf9\u4e8e\u9636\u6bb5\u6027\u5de5\u4f5c\u6ca1\u6709\u4e00\u4e2a\u597d\u7684\u9636\u6bb5\u6027\u76ee\u6807\uff0c\u8fd9\u70b9\u505a\u7684\u4e0d\u597d\uff0c\u5728\u4e0b\u6b21\u5199\u603b\u7ed3\u524d\u5b8c\u6210\u4e86\u5b83\u3002',
+          ),
+          o.a.createElement(
+            'h3',
+            { id: '2' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#2' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '2',
+          ),
+          o.a.createElement('p', null, '\u5b66\u4e60\u8fdb\u5ea6\u4e0a'),
+          o.a.createElement(
+            'h3',
+            { id: '\u5409\u4ed6' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#\u5409\u4ed6' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u5409\u4ed6',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u51fa\u73b0\u4e86\u70ed\u5ea6\u9000\u6563\u671f\uff0c\u8fd9\u4e2a\u8ff9\u8c61\u4e0d\u597d\uff0c\u8fd9\u5468\u7ed9\u81ea\u5df1\u5b9a3\u4e2a\u5c0f\u76ee\u6807 1. \u5b66\u4f1a\u5f39\u5531',
+            o.a.createElement('code', null, 'no women no cry'),
+            '2. \u4fdd\u8bc1\u6bcf\u5929\u534a\u5c0f\u65f6\u7684\u5409\u4ed6\u624b\u8054\u7cfb\u8bfe\u7a0b 3. \u5b66\u4f1a\u4f7f\u7528 ireal pro',
+          ),
+          o.a.createElement(
+            'h3',
+            { id: '\u6512\u94b1app' },
+            o.a.createElement(
+              'a',
+              { 'aria-hidden': 'true', href: '#\u6512\u94b1app' },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u6512\u94b1app',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u6570\u636e\u5e93\u4fa7\u7684\u4f7f\u7528\u51fa\u73b0\u4e0d\u719f\u7ec3\u6ca1\u6709\u6301\u4e45\u65f6\u95f4\u7684\u63a8\u8fdb\uff0c\u73b0\u5728\u627e\u5230\u4e86\u4e00\u7bc7\u89e3\u51b3\u95ee\u9898\u7684\u6587\u7ae0\uff0c\u660e\u5929\u770b\u4e00\u7b14',
+          ),
+          o.a.createElement(
+            'h3',
+            { id: '\u7a0b\u5e8f\u5458\u7684\u76f8\u5173\u5b66\u4e60' },
+            o.a.createElement(
+              'a',
+              {
+                'aria-hidden': 'true',
+                href: '#\u7a0b\u5e8f\u5458\u7684\u76f8\u5173\u5b66\u4e60',
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u7a0b\u5e8f\u5458\u7684\u76f8\u5173\u5b66\u4e60',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u8fd8\u662f\u6295\u5165\u5728',
+            o.a.createElement(
+              'strong',
+              null,
+              '\u654f\u6377\u8f6f\u4ef6\u5f00\u53d1',
+            ),
+            '\u8fd9\u672c\u4e66\u4e0a\u4e0d\u8fc7\u63a8\u8fdb\u901f\u5ea6\u8981\u52a0\u5f3a',
+          ),
+        ),
+      );
+    };
   },
   '8GlL': function(e, t, n) {
     'use strict';
@@ -32906,7 +33038,12 @@
                           },
                           {
                             path: '/essays/2020-10-09',
-                            title: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8',
+                            title: '2020-10-09',
+                            meta: {},
+                          },
+                          {
+                            path: '/essays/2020-10-12',
+                            title: '2020-10-12',
                             meta: {},
                           },
                         ],
@@ -33098,18 +33235,54 @@
               exact: !0,
               meta: {
                 filePath: 'docs/essays/2020-10-09.md',
-                updatedTime: 1602292652643,
+                updatedTime: 1602292703e3,
                 slugs: [
+                  { depth: 1, value: '2020-10-09', heading: '2020-10-09' },
                   {
-                    depth: 1,
+                    depth: 2,
                     value: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8',
                     heading: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8',
                   },
                 ],
-                title: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8',
+                title: '2020-10-09',
                 nav: { path: '/essays', title: 'Essays' },
               },
-              title: '\u5de5\u4f5c\u7b2c\u4e00\u65e5\u590d\u76d8',
+              title: '2020-10-09',
+            },
+            {
+              path: '/essays/2020-10-12',
+              component: n('8CUK').default,
+              exact: !0,
+              meta: {
+                filePath: 'docs/essays/2020-10-12.md',
+                updatedTime: 1602517285684,
+                slugs: [
+                  { depth: 1, value: '2020-10-12', heading: '2020-10-12' },
+                  {
+                    depth: 2,
+                    value:
+                      '\u7b2c\u4e8c\u5468\u5de5\u4f5c\u5f00\u59cb\u590d\u76d8',
+                    heading:
+                      '\u7b2c\u4e8c\u5468\u5de5\u4f5c\u5f00\u59cb\u590d\u76d8',
+                  },
+                  { depth: 3, value: '1', heading: '1' },
+                  { depth: 3, value: '2', heading: '2' },
+                  { depth: 3, value: '\u5409\u4ed6', heading: '\u5409\u4ed6' },
+                  {
+                    depth: 3,
+                    value: '\u6512\u94b1app',
+                    heading: '\u6512\u94b1app',
+                  },
+                  {
+                    depth: 3,
+                    value: '\u7a0b\u5e8f\u5458\u7684\u76f8\u5173\u5b66\u4e60',
+                    heading: '\u7a0b\u5e8f\u5458\u7684\u76f8\u5173\u5b66\u4e60',
+                  },
+                ],
+                title: '2020-10-12',
+                nav: { path: '/essays', title: 'Essays' },
+              },
+              title: '2020-10-12',
             },
             {
               path: '/guitar/pre-work',
